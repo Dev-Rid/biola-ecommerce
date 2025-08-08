@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { getProducts, subscribeToProducts } from '../lib/supabase'
-import ProductGrid from '../components/Products/ProductGrid'
-import ProductFilters from '../components/Products/ProductFilters'
+import ProductGrid from '../Products/ProductGrid'
+import ProductFilters from '../Products/ProductFilters'
 
 const Products = () => {
   const [products, setProducts] = useState([])

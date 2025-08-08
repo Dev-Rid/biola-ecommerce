@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { ArrowLeft, ShoppingCart, Heart, Star, Truck, Shield, RotateCcw } from 'lucide-react'
 import { getProduct } from '../lib/supabase'
-import { useCart } from '../contexts/CartContext'
-import Button from '../components/UI/Button'
-import LoadingSpinner from '../components/UI/LoadingSpinner'
 import toast from 'react-hot-toast'
+import { useCart } from '../../Contexts/CartContext'
+import Button from '../UI/Button'
+import LoadingSpinner from '../UI/LoadingSpinner'
 
 const ProductDetail = () => {
   const { id } = useParams()

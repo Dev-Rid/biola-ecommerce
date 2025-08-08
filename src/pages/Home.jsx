@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Star, Shield, Truck, Headphones } from 'lucide-react'
 import { getProducts } from '../lib/supabase'
-import ProductGrid from '../components/Products/ProductGrid'
-import Button from '../components/UI/Button'
+// import ProductGrid from '../components/Products/ProductGrid'
+import Button from '../UI/Button'
+import ProductGrid from '../Products/ProductGrid'
 
 const Home = () => {
   const [featuredProducts, setFeaturedProducts] = useState([])

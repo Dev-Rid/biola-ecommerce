@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { Eye, EyeOff, Mail, Lock } from 'lucide-react'
 import { signIn } from '../../lib/supabase'
-import Button from '../../components/UI/Button'
+// import Button from '../../components/UI/Button'
 import toast from 'react-hot-toast'
 
 const Login = () => {

@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CreditCard, Lock, Truck, MapPin } from 'lucide-react'
-import { useCart } from '../contexts/CartContext'
-import { useAuth } from '../contexts/AuthContext'
+import { useAuth } from '../../Contexts/AuthContext'
 import { createOrder } from '../lib/supabase'
-import Button from '../components/UI/Button'
+import Button from '../UI/Button'
 import toast from 'react-hot-toast'
+import { useCart } from '../../Contexts/CartContext'
 
 const Checkout = () => {
   const { items, getTotalPrice, clearCart } = useCart()
