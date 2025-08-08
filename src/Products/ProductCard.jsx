@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ShoppingCart, Heart, Star } from 'lucide-react'
-import { useCart } from '../../contexts/CartContext'
+import { useCart } from '../../Contexts/CartContext'
 import Button from '../UI/Button'
 
 const ProductCard = ({ product }) => {

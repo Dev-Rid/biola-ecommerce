@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ShoppingCart, User, Menu, X, Search, LogOut } from 'lucide-react'
-import { useAuth } from '../../contexts/AuthContext'
-import { useCart } from '../../contexts/CartContext'
+import { useAuth } from '../../Contexts/AuthContext'
 import { signOut } from '../../lib/supabase'
+import { useCart } from '../../Contexts/CartContext'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

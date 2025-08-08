@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
-import { AuthProvider } from './contexts/AuthContext'
-import { CartProvider } from './contexts/CartContext'
-import Layout from './components/Layout/Layout'
+// import { AuthProvider } from './contexts/AuthContext'
+// import { CartProvider } from './contexts/CartContext'
+// import Layout from './components/Layout/Layout'
 import Home from './pages/Home'
 import Products from './pages/Products'
 import ProductDetail from './pages/ProductDetail'
@@ -11,6 +11,10 @@ import Checkout from './pages/Checkout'
 import Login from './pages/Auth/Login'
 import Register from './pages/Auth/Register'
 import './index.css'
+import { AuthProvider } from '../Contexts/AuthContext'
+import { CartProvider } from '../Contexts/CartContext'
+import Layout from './Layout/Layout'
+
 
 function App() {
   return (
