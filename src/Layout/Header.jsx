@@ -25,23 +25,23 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">E</span>
+              <span className="text-white font-bold text-lg">Biola</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">EcomStore</span>
+            <span className="text-xl font-bold text-red-500">EcommStore</span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-primary-600 transition-colors ">
+            <Link to="/" className="text-gray-300 hover:text-primary-600 transition-colors  ">
               Home
             </Link>
-            <Link to="/products" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link to="/products" className="text-gray-300 hover:text-primary-600 transition-colors">
               Products
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link to="/about" className="text-gray-300 hover:text-primary-600 transition-colors">
               About
             </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link to="/contact" className="text-gray-300 hover:text-primary-600 transition-colors">
               Contact
             </Link>
           </nav>
@@ -50,12 +50,12 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             {/* Search */}
             <button className="p-2 text-gray-700 hover:text-primary-600 transition-colors">
-              <Search className="w-5 h-5" />
+              <Search className="w-5 h-5 text-gray-100" />
             </button>
 
             {/* Cart */}
             <Link to="/cart" className="relative p-2 text-gray-700 hover:text-primary-600 transition-colors">
-              <ShoppingCart className="w-5 h-5" />
+              <ShoppingCart className="w-5 h-5 text-gray-100" />
               {getTotalItems() > 0 && (
                 <span className="absolute -top-1 -right-1 bg-primary-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                   {getTotalItems()}
@@ -69,7 +69,7 @@ const Header = () => {
                 onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
                 className="p-2 text-gray-700 hover:text-primary-600 transition-colors"
               >
-                <User className="w-5 h-5" />
+                <User className="w-5 h-5 text-gray-100" />
               </button>
 
               {isUserMenuOpen && (
@@ -137,7 +137,7 @@ const Header = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden p-2 text-gray-700 hover:text-primary-600 transition-colors"
             >
-              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {isMenuOpen ? <X className="w-5 h-5 text-gray-100" /> : <Menu className="w-5 h-5 text-gray-100" />}
             </button>
           </div>
         </div>
@@ -148,28 +148,28 @@ const Header = () => {
             <nav className="flex flex-col space-y-2">
               <Link
                 to="/"
-                className="px-4 py-2 text-gray-700 hover:text-primary-600 transition-colors"
+                className="px-4 py-2 text-gray-100 hover:text-primary-600 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 to="/products"
-                className="px-4 py-2 text-gray-700 hover:text-primary-600 transition-colors"
+                className="px-4 py-2 text-gray-100 hover:text-primary-600 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Products
               </Link>
               <Link
                 to="/about"
-                className="px-4 py-2 text-gray-700 hover:text-primary-600 transition-colors"
+                className="px-4 py-2 text-gray-100 hover:text-primary-600 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 to="/contact"
-                className="px-4 py-2 text-gray-700 hover:text-primary-600 transition-colors"
+                className="px-4 py-2 text-gray-100 hover:text-primary-600 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact

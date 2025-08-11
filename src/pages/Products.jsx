@@ -100,12 +100,13 @@ const Products = () => {
   const categories = [...new Set(products.map(product => product.category))].filter(Boolean)
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    // <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-gradient-to-r from-[rgb(54,117,107)] to-gray-800 py-20">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">
+        <h1 className="text-3xl font-bold text-gray-200 mb-4">
           All Products
         </h1>
-        <p className="text-gray-600">
+        <p className="text-gray-300">
           Discover our complete collection of quality products
         </p>
       </div>
@@ -117,7 +118,7 @@ const Products = () => {
       />
 
       <div className="mb-4 flex justify-between items-center">
-        <p className="text-gray-600">
+        <p className="text-gray-200">
           Showing {filteredProducts.length} of {products.length} products
         </p>
       </div>

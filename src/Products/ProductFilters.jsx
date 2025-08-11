@@ -32,13 +32,13 @@ const ProductFilters = ({ filters, onFiltersChange, categories = [] }) => {
   const availableCategories = categories.length > 0 ? categories : defaultCategories
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow-md mb-6">
+    <div className="bg-gray-400 p-4 rounded-lg shadow-md mb-6">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-semibold flex items-center">
+        <h3 className="text-lg font-semibold flex items-center text-[rgb(54,117,107)]">
           <Filter className="w-5 h-5 mr-2" />
           Filters
         </h3>
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 ">
           <Button
             variant="ghost"
             size="sm"
@@ -60,7 +60,7 @@ const ProductFilters = ({ filters, onFiltersChange, categories = [] }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Search */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label className="block text-sm font-medium text-gray-700 mb-1 text-[rgb(54,117,107)] ">
               Search
             </label>
             <input
@@ -74,7 +74,7 @@ const ProductFilters = ({ filters, onFiltersChange, categories = [] }) => {
 
           {/* Category */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label className="block text-sm font-medium text-gray-700 mb-1 text-[rgb(54,117,107)]">
               Category
             </label>
             <select
@@ -93,7 +93,7 @@ const ProductFilters = ({ filters, onFiltersChange, categories = [] }) => {
 
           {/* Price Range */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label className="block text-sm font-medium text-gray-700 mb-1 text-[rgb(54,117,107)]">
               Min Price
             </label>
             <input
@@ -107,7 +107,7 @@ const ProductFilters = ({ filters, onFiltersChange, categories = [] }) => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label className="block text-sm font-medium text-gray-700 mb-1 text-[rgb(54,117,107)]">
               Max Price
             </label>
             <input
