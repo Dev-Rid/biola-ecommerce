@@ -27,19 +27,19 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6 text-emerald-600" />,
       title: 'Email Us',
-      info: 'support@shophub.com',
+      info: 'ridwanabiola2000@gmail.com',
       description: 'Send us an email anytime'
     },
     {
       icon: <Phone className="h-6 w-6 text-emerald-600" />,
       title: 'Call Us',
-      info: '+1 (555) 123-4567',
+      info: '+234 706 5906 546',
       description: 'Mon-Fri from 8am to 5pm'
     },
     {
       icon: <MapPin className="h-6 w-6 text-emerald-600" />,
       title: 'Visit Us',
-      info: '123 Commerce St, NY 10001',
+      info: 'Ibadan, Nigeria',
       description: 'Our headquarters location'
     },
     {
@@ -69,15 +69,15 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 ">
       {/* Hero Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-16 bg-gradient-to-r from-[rgb(54,117,107)] to-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-300 mb-6">
               Get in Touch
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               We'd love to hear from you. Send us a message and we'll respond as soon as possible.
             </p>
           </div>
@@ -85,15 +85,15 @@ const Contact = () => {
       </section>
 
       {/* Contact Info Cards */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 bg-gradient-to-r from-[rgb(54,117,107)] to-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {contactInfo.map((info, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
+              <div key={index} className="bg-gray-300 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
                 <div className="bg-gray-50 p-3 rounded-full w-12 h-12 mx-auto mb-4 flex items-center justify-center">
                   {info.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{info.title}</h3>
+                <h3 className="text-lg font-semibold text-[rgb(54,117,107)] textgray-900 mb-2">{info.title}</h3>
                 <p className="text-emerald-600 font-medium mb-1">{info.info}</p>
                 <p className="text-gray-600 text-sm">{info.description}</p>
               </div>
@@ -103,8 +103,8 @@ const Contact = () => {
           {/* Main Content */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact Form */}
-            <div className="lg:col-span-2">
-              <div className="bg-white rounded-lg shadow-md p-8">
+            <div className="lg:col-span-2 ">
+              <div className="bg-gray- rounded-lg shadow-md p-8 bg-gray-400">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -238,8 +238,8 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 bg-gray-500">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Visit Our Office</h2>
             <p className="text-gray-600">

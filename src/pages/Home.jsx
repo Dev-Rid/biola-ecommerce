@@ -98,7 +98,7 @@ const Home = () => {
             {features.map((feature, index) => (
               <div key={index} className="text-center p-6 bg-gray-300 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-primary-100 text-primary-600 rounded-lg mb-4">
-                  <feature.icon className="w-10 h-10 text-[rgb(54,117,107)]" />
+                  <feature.icon className="w-10 h-10 text-[rgb(54,117,107)] rounded-lg" />
                 </div>
                 <h3 className="text-lg font-semibold textgray900 text-[rgb(54,117,107)] mb-2">
                   {feature.title}

@@ -60,7 +60,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-300 mb-6">
-              About BiolaMart
+              About Biola<span className='text-yellow-500'>Mart</span>
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
               We're on a mission to revolutionize online shopping by providing exceptional products, 
