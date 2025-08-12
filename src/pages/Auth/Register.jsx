@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Eye, EyeOff, Mail, Lock, User } from 'lucide-react'
 import { signUp } from '../../lib/supabase'
-// import Button from '../../components/UI/Button'
 import toast from 'react-hot-toast'
 import Button from '../../UI/Button'
 
@@ -59,15 +58,15 @@ const Register = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center bg-gray-400 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
         <div>
           <div className="flex justify-center">
             <div className="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">E</span>
+              <span className="text-white font-bold text-xl"></span>
             </div>
           </div>
-          <h2 className="mt-6 text-center text-3xl font-bold text-gray-900">
+          <h2 className="mt-6 text-center text-4xl font-bold text-[rgb(37,74,68)]">
             Create your account
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
@@ -84,7 +83,7 @@ const Register = () => {
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="space-y-4">
             <div>
-              <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="fullName" className="block text-sm font-medium text-[rgb(37,74,68)]">
                 Full Name
               </label>
               <div className="mt-1 relative">
@@ -99,14 +98,14 @@ const Register = () => {
                   required
                   value={formData.fullName}
                   onChange={handleChange}
-                  className="appearance-none relative block w-full pl-10 pr-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-primary-500 focus:border-primary-500 focus:z-10 sm:text-sm"
+                  className="appearance-none relative block w-full pl-10 pr-3 py-2 border border-[rgb(37,74,68)] placeholder-gray-500 text-[rgb(37,74,68)] rounded-lg focus:outline-none focus:ring-primary-500 focus:border-primary-500 focus:z-10 sm:text-sm"
                   placeholder="Enter your full name"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="email" className="block text-sm font-medium text-[rgb(37,74,68)]">
                 Email address
               </label>
               <div className="mt-1 relative">
@@ -121,14 +120,14 @@ const Register = () => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="appearance-none relative block w-full pl-10 pr-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-primary-500 focus:border-primary-500 focus:z-10 sm:text-sm"
+                  className="appearance-none relative block w-full pl-10 pr-3 py-2 border border-[rgb(37,74,68)] placeholder-gray-500 text-[rgb(37,74,68)] rounded-lg focus:outline-none focus:ring-primary-500 focus:border-primary-500 focus:z-10 sm:text-sm"
                   placeholder="Enter your email"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="password" className="block text-sm font-medium text-[rgb(37,74,68)]">
                 Password
               </label>
               <div className="mt-1 relative">
@@ -143,7 +142,7 @@ const Register = () => {
                   required
                   value={formData.password}
                   onChange={handleChange}
-                  className="appearance-none relative block w-full pl-10 pr-10 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-primary-500 focus:border-primary-500 focus:z-10 sm:text-sm"
+                  className="appearance-none relative block w-full pl-10 pr-10 py-2 border border-[rgb(37,74,68)] placeholder-gray-500 text-[rgb(37,74,68)] rounded-lg focus:outline-none focus:ring-primary-500 focus:border-primary-500 focus:z-10 sm:text-sm"
                   placeholder="Enter your password"
                 />
                 <button
@@ -161,7 +160,7 @@ const Register = () => {
             </div>
 
             <div>
-              <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="confirmPassword" className="block text-sm font-medium text-[rgb(37,74,68)]">
                 Confirm Password
               </label>
               <div className="mt-1 relative">
@@ -176,7 +175,7 @@ const Register = () => {
                   required
                   value={formData.confirmPassword}
                   onChange={handleChange}
-                  className="appearance-none relative block w-full pl-10 pr-10 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-primary-500 focus:border-primary-500 focus:z-10 sm:text-sm"
+                  className="appearance-none relative block w-full pl-10 pr-10 py-2 border border-[rgb(37,74,68)] placeholder-gray-500 text-[rgb(37,74,68)] rounded-lg focus:outline-none focus:ring-primary-500 focus:border-primary-500 focus:z-10 sm:text-sm"
                   placeholder="Confirm your password"
                 />
                 <button
@@ -194,12 +193,12 @@ const Register = () => {
             </div>
           </div>
 
-          <div>
+          <div className='text-[rgb(37,74,68)]'>
             <Button
               type="submit"
               loading={loading}
               size="lg"
-              className="w-full"
+              className="w-full text-[rgb(37,74,68)]"
             >
               Create Account
             </Button>

@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { Eye, EyeOff, Mail, Lock } from 'lucide-react'
 import { signIn } from '../../lib/supabase'
-// import Button from '../../components/UI/Button'
 import toast from 'react-hot-toast'
+import Button from '../../UI/Button'
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -45,15 +45,15 @@ const Login = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center bg-gray-400 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
         <div>
           <div className="flex justify-center">
             <div className="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">E</span>
+              <span className="text-white font-bold text-xl"></span>
             </div>
           </div>
-          <h2 className="mt-6 text-center text-3xl font-bold text-gray-900">
+          <h2 className="mt-6 text-center text-4xl font-bold textgray-900 text-[rgb(37,74,68)]">
             Sign in to your account
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
@@ -70,7 +70,7 @@ const Login = () => {
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="space-y-4">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="email" className="block text-sm font-medium text-[rgb(37,74,68)] textgray-700">
                 Email address
               </label>
               <div className="mt-1 relative">
@@ -85,14 +85,14 @@ const Login = () => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="appearance-none relative block w-full pl-10 pr-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-primary-500 focus:border-primary-500 focus:z-10 sm:text-sm"
+                  className="appearance-none relative block w-full pl-10 pr-3 py-2 border border-[rgb(37,74,68)] placeholder-gray-500 text-[rgb(37,74,68)] rounded-lg focus:outline-none focus:ring-primary-500 focus:border-primary-500 focus:z-10 sm:text-sm"
                   placeholder="Enter your email"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="password" className="block text-sm font-medium text-[rgb(37,74,68)] textgray-700">
                 Password
               </label>
               <div className="mt-1 relative">
@@ -107,7 +107,7 @@ const Login = () => {
                   required
                   value={formData.password}
                   onChange={handleChange}
-                  className="appearance-none relative block w-full pl-10 pr-10 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-primary-500 focus:border-primary-500 focus:z-10 sm:text-sm"
+                  className="appearance-none relative block w-full pl-10 pr-10 py-2 border border-[rgb(37,74,68)] bordergray-300 placeholder-gray-500 text-[rgb(37,74,68)] rounded-lg focus:outline-none focus:ring-primary-500 focus:border-primary-500 focus:z-10 sm:text-sm"
                   placeholder="Enter your password"
                 />
                 <button
@@ -133,7 +133,7 @@ const Login = () => {
                 type="checkbox"
                 className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
               />
-              <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
+              <label htmlFor="remember-me" className="ml-2 block text-sm text-[rgb(37,74,68)] textgray-900">
                 Remember me
               </label>
             </div>
@@ -141,14 +141,14 @@ const Login = () => {
             <div className="text-sm">
               <Link
                 to="/forgot-password"
-                className="font-medium text-primary-600 hover:text-primary-500"
+                className="font-medium text-[rgb(37,74,68)] textprimary-600 hover:text-primary-500"
               >
                 Forgot your password?
               </Link>
             </div>
           </div>
 
-          <div>
+          <div className='text-[rgb(37,74,68)]'>
             <Button
               type="submit"
               loading={loading}
