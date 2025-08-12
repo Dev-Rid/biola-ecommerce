@@ -247,11 +247,11 @@ const Contact = () => {
             </p>
           </div>
           
-          <div className="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
-            <div className="text-center">
+          <div className="bggray-200 bg-[rgb(37,74,68)] h-96 rounded-lg flex items-center justify-center">
+            <div className="text-center ">
               <MapPin className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-              <p className="text-gray-600">Interactive map would be displayed here</p>
-              <p className="text-sm text-gray-500 mt-2">123 Commerce Street, New York, NY 10001</p>
+              <p className="text-gray-200">Interactive map would be displayed here</p>
+              <p className="text-sm text-gray-400 mt-2">No 3, zone BC ogo oluwa community ologun-eru, Nigeria, 200219</p>
             </div>
           </div>
         </div>
