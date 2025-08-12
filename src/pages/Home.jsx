@@ -59,7 +59,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in text-gray-300">
-              Welcome to EcomStore
+              Welcome to Biola<span className='text-yellow-500'>Mart</span> Store
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-100 animate-slide-up text-gray-400">
               Discover amazing products at unbeatable prices
