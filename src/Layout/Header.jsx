@@ -25,9 +25,9 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">Biola</span>
+              <span className="text-white font-bold text-xl ">Biola</span>
             </div>
-            <span className="text-xl font-bold text-red-500">Store</span>
+            <span className="text-2xl font-bold text-red-500">Mart</span>
           </Link>
 
           {/* Desktop Navigation */}
